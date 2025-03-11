@@ -9,7 +9,6 @@ function calculateRentalCost(days) {
   const BIG_DISCOUNT = 50;
   const SHORT_TERM = 3;
   const LONG_TERM = 7;
-  const discount = 0;
 
   if (days >= LONG_TERM) {
     return days * CAR_COST_PER_DAY - BIG_DISCOUNT;
@@ -19,7 +18,7 @@ function calculateRentalCost(days) {
     return days * CAR_COST_PER_DAY - SMALL_DISCOUNT;
   }
 
-  return days * CAR_COST_PER_DAY - discount;
+  return days * CAR_COST_PER_DAY;
 }
 
 module.exports = calculateRentalCost;
